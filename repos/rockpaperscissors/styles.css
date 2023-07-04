@@ -1,0 +1,30 @@
+body {
+    background-color: #121313;
+    color: #858585;
+}
+
+.intro {
+    display:flex;
+    justify-content: center;
+    align-self:center;
+    font-family:'Courier New', Courier, monospace;
+    font-size:70px;
+    font-weight:bolder;
+    text-decoration: underline;
+}
+
+button {
+    display:block;
+    background-color:#8d8d8d;
+    width:300px;
+    height:100px;
+    margin:90px;
+    font-family:Impact;
+    font-size: 50px;
+}
+
+.buttons {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
