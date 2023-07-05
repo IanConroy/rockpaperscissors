@@ -10,21 +10,40 @@ body {
     font-family:'Courier New', Courier, monospace;
     font-size:70px;
     font-weight:bolder;
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 button {
-    display:block;
     background-color:#8d8d8d;
     width:300px;
     height:100px;
-    margin:90px;
+    margin:50px;
     font-family:Impact;
     font-size: 50px;
+    font-weight:bolder;
+    
+    
 }
 
-.buttons {
+.rpsbuttons {
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+
+}
+
+.inputh1 {
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+label {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.submitbutton {
+    
 }
