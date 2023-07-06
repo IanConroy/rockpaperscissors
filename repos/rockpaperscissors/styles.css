@@ -13,23 +13,22 @@ body {
     text-decoration:underline;
 }
 
-button {
-    background-color:#8d8d8d;
-    width:300px;
-    height:100px;
-    margin:50px;
-    font-family:Impact;
-    font-size: 50px;
-    font-weight:bolder;
-    
-    
-}
 
 .rpsbuttons {
     display:flex;
     justify-content:center;
     flex-direction:row;
 
+}
+
+.rpsbuttons button {
+    background-color:#8d8d8d;
+        width:300px;
+        height:100px;
+        margin:50px;
+        font-family:Impact;
+        font-size: 50px;
+        font-weight:bolder;
 }
 
 .inputh1 {
@@ -42,8 +41,4 @@ label {
     display:flex;
     align-items:center;
     justify-content:center;
-}
-
-.submitbutton {
-    
 }

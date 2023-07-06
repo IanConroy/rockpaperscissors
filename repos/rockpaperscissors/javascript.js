@@ -1,6 +1,6 @@
-
-
-function getComputerChoice(rock, paper, scissors) {
-   return Math.random(rock, paper, scissors) * 1;
+function computerPlay() {
+const options = ["rock", "paper", "scissors"];
+const randomIndex = Math.floor(Math.random() * options.length);
+return options[randomIndex];
 }
-
+const computerChoice = computerPlay();
