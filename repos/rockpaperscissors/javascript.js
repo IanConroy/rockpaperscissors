@@ -3,23 +3,15 @@ const options = ["rock", "paper", "scissors"];
 const randomIndex = Math.floor(Math.random() * options.length);
 return options[randomIndex];
 }
+
+
 const computerSelection = getComputerChoice();
+
 
 const rockButton = document.getElementById("rockbutton");
 const paperButton = document.getElementById("paperbutton");
 const scissorsButton = document.getElementById("scissorsbutton");
-
-rockButton.addEventListener("click", function() {
-    playRound("rock");
-})
-
-paperButton.addEventListener("click", function() {
-    playRound("paper");
-})
-
-scissorsButton.addEventListener("click", function() {
-    playRound("scissors");
-})
+const playerSelection = [rockButton, paperButton, scissorsButton];
 
 function playRound(playerSelection, computerSelection) {
     let post = "";
@@ -53,5 +45,16 @@ function playRound(playerSelection, computerSelection) {
 }
 
 
+rockButton.addEventListener("click", function() {
+    playRound("rock");
+})
+
+paperButton.addEventListener("click", function() {
+    playRound("paper");
+})
+
+scissorsButton.addEventListener("click", function() {
+    playRound("scissors");
+})
     
 
