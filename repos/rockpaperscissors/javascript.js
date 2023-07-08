@@ -1,60 +1,37 @@
 function getComputerChoice() {
-const options = ["rock", "paper", "scissors"];
+const options = ["rock","paper","scissors"];
 const randomIndex = Math.floor(Math.random() * options.length);
 return options[randomIndex];
 }
 
-
 const computerSelection = getComputerChoice();
 
 
-const rockButton = document.getElementById("rockbutton");
-const paperButton = document.getElementById("paperbutton");
-const scissorsButton = document.getElementById("scissorsbutton");
-const playerSelection = [rockButton, paperButton, scissorsButton];
+const playerSelection = ["rock","paper","scissors"]
+
+rockButton.addEventListener("click", playRound("rock"));
+paperButton.addEventListener("click", playRound("paper"));
+scissorsButton.addEventListener("click", playRound("scissors"));
 
 function playRound(playerSelection, computerSelection) {
-    let post = "";
+    let postresult = "";
 
-    if (playerSelection === "rock") {
-        if (computerSelection === "paper") {
-            post = "Paper wins. Git gud, n00b.";
-        } else if (computerSelection ==="scissors") {
-            post = "You won. That sure \"rocks\" eh?";
-        } else {
-            post = "Tie. You both rocked out."
-        }
-    } else if (playerSelection === "paper") {
-        if (computerSelection === "scissors") {
-            post = "Scissors won. Git gud, n00b."; 
-        } else if (computerSelection === "rock") {
-            post = "You won because somehow, in this game, paper>rock.";
-            } else {
-                post = "Tie. Neither of you could cut it."
-            }
-    } else if (playerSelection === "scissors") {
-        if (computerSelection === "rock") {
-            post = "You got rocked. Git gud, n00b.";
-        } else if (computerSelection === "paper") {
-            post = "You won. You made the cut.";
-        } else {
-            post = "Tie. Neither of you made the cut.";
-        }
+    if (playerSelection === computerSelection) {
+        postresult = "Draw! Everyone lives another day...";
+    } else if (
+        (userSelection === "rock" && computerChoice === "scissors") ||
+        (userSelection === "paper" && computerChoice === "rock") ||
+        (userSelection === "scissors" && computerChoice === "paper")
+    ) {
+        postresult = "You Win! Take that, robo!";
+    } else {
+        postresult = "You lose! Pew pew! ZING!!!";
     }
-    return post;
+
+document.getElementById("results").innerHTML = `
+<p>You chose: <strong>${playerSelection}</strong></p>
+<p>Computer chose: <strong>${computerSelection}</strong></p>
+<p>${postresult}</p>
+`;
 }
-
-
-rockButton.addEventListener("click", function() {
-    playRound("rock");
-})
-
-paperButton.addEventListener("click", function() {
-    playRound("paper");
-})
-
-scissorsButton.addEventListener("click", function() {
-    playRound("scissors");
-})
-    
 
