@@ -24,9 +24,9 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         postresult = "Draw! Everyone lives another day...";
     } else if (
-        (userSelection === "rock" && computerChoice === "scissors") ||
-        (userSelection === "paper" && computerChoice === "rock") ||
-        (userSelection === "scissors" && computerChoice === "paper")
+        (playerSelection === "rock" && computerChoice === "scissors") ||
+        (playerSelection === "paper" && computerChoice === "rock") ||
+        (playerSelection === "scissors" && computerChoice === "paper")
     ) {
         postresult = "You Win! Take that, robo!";
         playerScore++;
