@@ -10,6 +10,8 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
 
+    /*     *****REMOVED FOR NOW*****
+
     for (let round = 1; round <= 5; round++) {
     let playerSelection = prompt("What is your choice of weaponry? Rock, paper or scissors?");
     let computerSelection = getComputerChoice();
@@ -21,6 +23,9 @@ function game() {
         computerScore++;
     }
     }
+    */
+
+
     if (playerScore > computerScore) {
         console.log("Well done. You have vanquished robo...for now.");
     } else if (playerScore < computerScore) {
@@ -45,3 +50,7 @@ function playRound(playerSelection, computerSelection) {
     return `You lose! ${computer} beats ${player}!`;
  }    
 }
+
+
+const rockButton = document.querySelector("#rockButton");
+rockButton.addEventListener.playRound(rock, computerSelection);
