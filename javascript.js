@@ -53,4 +53,10 @@ function playRound(playerSelection, computerSelection) {
 
 
 const rockButton = document.querySelector("#rockButton");
-rockButton.addEventListener.playRound(rock, computerSelection);
+rockButton.addEventListener.click.playRound(rock, computerSelection);
+const paperButton = document.querySelector("#paperButton");
+paperButton.addEventListener.click.playRound(paper, computerSelection);
+const scissorsButton = document.querySelector("#scissorsButton");
+scissorsButton.addEventListener.click.playRound(scissors, computerSelection);
+
+const results = document.querySelector("#results");
