@@ -1,0 +1,10 @@
+SET optionsArray "rock, paper, scissors"
+DISPLAY optionsButtons "rock, paper, scissors"
+DETERMINE winner rock>scissors>paper>rock
+SET playerSelection via optionsButtons AND GET computerSelection via optionsArray
+	IF playerWins THEN add playerCount 
+		AND PRINT "you win! playerSelection beats computerSelection"
+	IF computerWins THEN add computerCount
+		AND PRINT "you lose! computerSelection beats playerSelection"
+	IF tie THEN PRINT "tie! you both chose playerSelection"
+	IF playerWins = 5 rounds OR computerWins = 5 rounds THEN endGame + printWinner
