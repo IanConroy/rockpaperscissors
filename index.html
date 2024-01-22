@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <style>
         body {
             background-color: #121313;
             color:#8d8d8d;
-            font-family: Impact;
+            font-family:'Courier New', Courier, monospace;
         }
     </style>
-    <h1>Rock, Paper, Scissors...</h1><br>
-    <h2>...on the console...</h2><br>
-    <h3>game()</h3>
-    <h4>^ type that in the console and hit enter, to see if you can vanquish robo...</h4>
-    <script src="javascript.js"></script>
+    <h1>Rock, Paper, Scissors...</h1>    
+    <h4>Choose your weaponry...</h4>
+    <div id="buttonPlace">
+        <button id="rockButton">Rock</button>
+        <button id="paperButton">Paper</button>
+        <button id="scissorsButton">Scissors</button>
+    </div>
+    <div id="pScore"></div>
+    <div id="cScore"></div>
+    <br><br>
+    <div id="gameResults"></div>
+    <br><br>
+    <div id="nameWinner"></div>
 </body>
 </html>
