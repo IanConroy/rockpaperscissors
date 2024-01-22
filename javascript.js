@@ -93,7 +93,6 @@ function playRound(playerSelection) {
             }
             document.getElementById("pScore").textContent = "Player Score: " + playerScore;
             document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
-            
     }
 
     document.getElementById("rockButton").addEventListener("click", function() {
