@@ -9,8 +9,8 @@ function getComputerChoice() {
 let playerScore = 0;
 let computerScore = 0;
 
-document.getElementById("pScore").textContent = "player Score: " + playerScore;
-document.getElementById("cScore").textContent = "computer Score: " + computerScore;
+document.getElementById("pScore").textContent = "player score: " + playerScore;
+document.getElementById("cScore").textContent = "computer score: " + computerScore;
 
 /*      !!!I found the if-else statement most succinct, but explored other
 options and left them commented out below. I had a lot of fun doing that. */
@@ -42,8 +42,8 @@ options and left them commented out below. I had a lot of fun doing that. */
                 computerScore++;
                 results.textContent = `you lose. ${computer} beats ${player}`;
             }
-            document.getElementById("pScore").textContent = "player Score: " + playerScore;
-            document.getElementById("cScore").textContent = "computer Score: " + computerScore;
+            document.getElementById("pScore").textContent = "player score: " + playerScore;
+            document.getElementById("cScore").textContent = "computer score: " + computerScore;
 
             if (playerScore === 5) {
                 nameWinner.textContent = "you have vanquished robo...";
