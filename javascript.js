@@ -22,11 +22,11 @@ options and left them commented out below. I had a lot of fun doing that. */
             let results = document.getElementById("gameResults");
             let nameWinner = document.getElementById("nameWinner");
                 if (playerScore === 5) {
-            nameWinner.textContent = "you have vanquished AI...";
+            nameWinner.textContent = "you have vanquished robo...";
             return "but they live in your head rent free...";
     }
                 if (computerScore === 5) {
-            nameWinner.textContent = "uh oh. AI won. enter the apocalypse.";
+            nameWinner.textContent = "uh oh. robo won. enter the apocalypse.";
             return "you need a time machine";
     }    
             if (player === computer) {
@@ -46,9 +46,9 @@ options and left them commented out below. I had a lot of fun doing that. */
             document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
 
             if (playerScore === 5) {
-                nameWinner.textContent = "you have vanquished AI...";
+                nameWinner.textContent = "you have vanquished robo...";
             } else if (computerScore === 5) {
-                nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
+                nameWinner.textContent = "uh oh. robo won. enter the apocalypse."
             }
         }         
 
@@ -71,11 +71,11 @@ function playRound(playerSelection) {
     let results = document.getElementById("gameResults");
     let nameWinner = document.getElementById("nameWinner");
     if (playerScore === 5) {
-        nameWinner.textContent = "you have vanquished AI...";
+        nameWinner.textContent = "you have vanquished robo...";
         return "but they live in your head rent free...";
     }
     if (computerScore === 5) {
-        nameWinner.textContent = "uh oh. AI won. enter the apocalypse.";
+        nameWinner.textContent = "uh oh. robo won. enter the apocalypse.";
         return "you need a time machine";
     }
             switch (`${player}-${computer}`) {      
@@ -95,9 +95,9 @@ function playRound(playerSelection) {
             results.textContent = `tie. you both chose ${player}`
             }
             if (playerScore === 5) {
-                nameWinner.textContent = "you have vanquished AI...";
+                nameWinner.textContent = "you have vanquished robo...";
             } else if (computerScore === 5) {
-                nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
+                nameWinner.textContent = "uh oh. robo won. enter the apocalypse."
             }
             document.getElementById("pScore").textContent = "Player Score: " + playerScore;
             document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
@@ -113,11 +113,11 @@ function playRound(playerSelection) {
         let results = document.getElementById("gameResults");
         let nameWinner = document.getElementById("nameWinner");
         if (playerScore === 5) {
-            nameWinner.textContent = "you have vanquished AI...";
+            nameWinner.textContent = "you have vanquished robo...";
             return "but they live in your head rent free...";
         }
         if (computerScore === 5) {
-            nameWinner.textContent = "uh oh. AI won. enter the apocalypse.";
+            nameWinner.textContent = "uh oh. robo won. enter the apocalypse.";
             return "you need a time machine";
         }
                 switch (`${player}-${computer}`) {      
@@ -136,9 +136,9 @@ function playRound(playerSelection) {
                 }
         }
         if (playerScore === 5) {
-            nameWinner.textContent = "you have vanquished AI...";
+            nameWinner.textContent = "you have vanquished robo...";
         } else if (computerScore === 5) {
-            nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
+            nameWinner.textContent = "uh oh. robo won. enter the apocalypse."
         }
         document.getElementById("pScore").textContent = "Player Score: " + playerScore;
         document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
