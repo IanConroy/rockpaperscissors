@@ -62,19 +62,6 @@ document.getElementById("scissorsButton").addEventListener("click", function() {
     playRound("scissors");
 });
 
-/* 
-
-document.getElementById("rockButton").addEventListener("click", function() {
-    playRound("rock");
-});
-document.getElementById("paperButton").addEventListener("click", function() {
-    playRound("paper");
-});
-document.getElementById("scissorsButton").addEventListener("click", function() {
-    playRound("scissors");
-});
-*/
-
 /*       !!!ALTERNATIVE SWITCH STATEMENT!!! 
 
 function playRound(playerSelection) {
