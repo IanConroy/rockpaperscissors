@@ -52,9 +52,6 @@ options and left them commented out below. I had a lot of fun doing that. */
             }
         }         
 
-
-/* */
-
 document.getElementById("rockButton").addEventListener("click", function() {
     playRound("rock");
 });
@@ -65,6 +62,18 @@ document.getElementById("scissorsButton").addEventListener("click", function() {
     playRound("scissors");
 });
 
+/* 
+
+document.getElementById("rockButton").addEventListener("click", function() {
+    playRound("rock");
+});
+document.getElementById("paperButton").addEventListener("click", function() {
+    playRound("paper");
+});
+document.getElementById("scissorsButton").addEventListener("click", function() {
+    playRound("scissors");
+});
+*/
 
 /*       !!!ALTERNATIVE SWITCH STATEMENT!!! 
 
@@ -97,18 +106,18 @@ function playRound(playerSelection) {
             break;
             default:
             results.textContent = `tie. you both chose ${player}`
-             if (playerScore === 5) {
+            }
+            if (playerScore === 5) {
                 nameWinner.textContent = "you have vanquished AI...";
             } else if (computerScore === 5) {
                 nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
-            }
             }
             document.getElementById("pScore").textContent = "Player Score: " + playerScore;
             document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
     }
 */ 
 
-/*              !!!HYBRID SWITCH/IF-ELSE!!!
+ /*             !!!HYBRID SWITCH/IF-ELSE!!! 
 
     function playRound(playerSelection) {
         let player = playerSelection.toLowerCase();
@@ -138,11 +147,11 @@ function playRound(playerSelection) {
                     playerScore++;
                     results.textContent = `you win. ${player} beats ${computer}`
                 }
-                 if (playerScore === 5) {
-                nameWinner.textContent = "you have vanquished AI...";
-            } else if (computerScore === 5) {
-                nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
-            }
+        }
+        if (playerScore === 5) {
+            nameWinner.textContent = "you have vanquished AI...";
+        } else if (computerScore === 5) {
+            nameWinner.textContent = "uh oh. AI won. enter the apocalypse."
         }
         document.getElementById("pScore").textContent = "Player Score: " + playerScore;
         document.getElementById("cScore").textContent = "Computer Score: " + computerScore;
